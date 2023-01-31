@@ -1,0 +1,14 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "events",
+      "direction": "in",
+      "eventHubName": "%aadNoninteractiveLogHubName%",
+      "connection": "AzureEventHubConnectionString",
+      "cardinality": "many",
+      "consumerGroup": "%aadNoninteractiveLogEventHubConsumerGroup%"
+    }
+  ]
+}
